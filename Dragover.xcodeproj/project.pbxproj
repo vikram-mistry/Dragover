@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001000000000000000000001 /* DragoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000001 /* DragoverApp.swift */; };
+		001000000000000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000002 /* AppDelegate.swift */; };
+		001000000000000000000003 /* ShelfItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000003 /* ShelfItem.swift */; };
+		001000000000000000000004 /* Shelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000004 /* Shelf.swift */; };
+		001000000000000000000005 /* PreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000005 /* PreferencesManager.swift */; };
+		001000000000000000000006 /* ShelfManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000006 /* ShelfManager.swift */; };
+		001000000000000000000007 /* DragDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000007 /* DragDetectionService.swift */; };
+		001000000000000000000008 /* NotchDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000008 /* NotchDetectionService.swift */; };
+		001000000000000000000009 /* ScreenshotMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000009 /* ScreenshotMonitorService.swift */; };
+		001000000000000000000010 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000010 /* PermissionService.swift */; };
+		001000000000000000000011 /* InstantActionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000011 /* InstantActionService.swift */; };
+		001000000000000000000012 /* InstantAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000012 /* InstantAction.swift */; };
+		001000000000000000000013 /* AirDropAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000013 /* AirDropAction.swift */; };
+		001000000000000000000014 /* MessagesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000014 /* MessagesAction.swift */; };
+		001000000000000000000015 /* MailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000015 /* MailAction.swift */; };
+		001000000000000000000016 /* CopyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000016 /* CopyAction.swift */; };
+		001000000000000000000017 /* CompressAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000017 /* CompressAction.swift */; };
+		001000000000000000000018 /* GetInfoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000018 /* GetInfoAction.swift */; };
+		001000000000000000000019 /* ShelfPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000019 /* ShelfPanel.swift */; };
+		001000000000000000000020 /* ShelfContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000020 /* ShelfContentView.swift */; };
+		001000000000000000000021 /* ShelfItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000021 /* ShelfItemView.swift */; };
+		001000000000000000000022 /* InstantActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000022 /* InstantActionsView.swift */; };
+		001000000000000000000023 /* ItemPreviewPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000023 /* ItemPreviewPanel.swift */; };
+		001000000000000000000024 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000024 /* PreferencesView.swift */; };
+		001000000000000000000025 /* GeneralSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000025 /* GeneralSettingsView.swift */; };
+		001000000000000000000026 /* ShelfActivationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000026 /* ShelfActivationSettingsView.swift */; };
+		001000000000000000000027 /* ShelfInteractionSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000027 /* ShelfInteractionSettingsView.swift */; };
+		001000000000000000000028 /* InstantActionsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000028 /* InstantActionsSettingsView.swift */; };
+		001000000000000000000029 /* ScreenshotShelfSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000029 /* ScreenshotShelfSettingsView.swift */; };
+		001000000000000000000030 /* PermissionOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000030 /* PermissionOnboardingView.swift */; };
+		001000000000000000000040 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002000000000000000000040 /* Quartz.framework */; };
+		59405537CF1A472E80431D25 /* GlobalShortcutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B362C3E8C7E343909F676E68 /* GlobalShortcutService.swift */; };
+		7E7E4FD6893FEE98B07DCB3B /* ShelfCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6129409183D124F1D7C6FF51 /* ShelfCell.swift */; };
+		ACD149D72F3A2B670045B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002000000000000000000031 /* Assets.xcassets */; };
+		BF644162BA22B071FAB83C91 /* ShelfCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B94791B75C8A80ACEAE0E2 /* ShelfCollectionView.swift */; };
+		C8CFDBCFA25E45BAB043FC0C /* QuickLookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9139FD211FD43379E14058D /* QuickLookHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		002000000000000000000001 /* DragoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragoverApp.swift; sourceTree = "<group>"; };
+		002000000000000000000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		002000000000000000000003 /* ShelfItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfItem.swift; sourceTree = "<group>"; };
+		002000000000000000000004 /* Shelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shelf.swift; sourceTree = "<group>"; };
+		002000000000000000000005 /* PreferencesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesManager.swift; sourceTree = "<group>"; };
+		002000000000000000000006 /* ShelfManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfManager.swift; sourceTree = "<group>"; };
+		002000000000000000000007 /* DragDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDetectionService.swift; sourceTree = "<group>"; };
+		002000000000000000000008 /* NotchDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchDetectionService.swift; sourceTree = "<group>"; };
+		002000000000000000000009 /* ScreenshotMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMonitorService.swift; sourceTree = "<group>"; };
+		002000000000000000000010 /* PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionService.swift; sourceTree = "<group>"; };
+		002000000000000000000011 /* InstantActionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantActionService.swift; sourceTree = "<group>"; };
+		002000000000000000000012 /* InstantAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantAction.swift; sourceTree = "<group>"; };
+		002000000000000000000013 /* AirDropAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropAction.swift; sourceTree = "<group>"; };
+		002000000000000000000014 /* MessagesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesAction.swift; sourceTree = "<group>"; };
+		002000000000000000000015 /* MailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAction.swift; sourceTree = "<group>"; };
+		002000000000000000000016 /* CopyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAction.swift; sourceTree = "<group>"; };
+		002000000000000000000017 /* CompressAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressAction.swift; sourceTree = "<group>"; };
+		002000000000000000000018 /* GetInfoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoAction.swift; sourceTree = "<group>"; };
+		002000000000000000000019 /* ShelfPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfPanel.swift; sourceTree = "<group>"; };
+		002000000000000000000020 /* ShelfContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfContentView.swift; sourceTree = "<group>"; };
+		002000000000000000000021 /* ShelfItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfItemView.swift; sourceTree = "<group>"; };
+		002000000000000000000022 /* InstantActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantActionsView.swift; sourceTree = "<group>"; };
+		002000000000000000000023 /* ItemPreviewPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPreviewPanel.swift; sourceTree = "<group>"; };
+		002000000000000000000024 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		002000000000000000000025 /* GeneralSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsView.swift; sourceTree = "<group>"; };
+		002000000000000000000026 /* ShelfActivationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfActivationSettingsView.swift; sourceTree = "<group>"; };
+		002000000000000000000027 /* ShelfInteractionSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfInteractionSettingsView.swift; sourceTree = "<group>"; };
+		002000000000000000000028 /* InstantActionsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantActionsSettingsView.swift; sourceTree = "<group>"; };
+		002000000000000000000029 /* ScreenshotShelfSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotShelfSettingsView.swift; sourceTree = "<group>"; };
+		002000000000000000000030 /* PermissionOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionOnboardingView.swift; sourceTree = "<group>"; };
+		002000000000000000000031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		002000000000000000000032 /* Dragover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dragover.entitlements; sourceTree = "<group>"; };
+		002000000000000000000033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002000000000000000000040 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		003000000000000000000001 /* Dragover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dragover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6129409183D124F1D7C6FF51 /* ShelfCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShelfCell.swift; path = Dragover/UI/Shelf/ShelfCell.swift; sourceTree = SOURCE_ROOT; };
+		A3B94791B75C8A80ACEAE0E2 /* ShelfCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShelfCollectionView.swift; path = Dragover/UI/Shelf/ShelfCollectionView.swift; sourceTree = SOURCE_ROOT; };
+		B362C3E8C7E343909F676E68 /* GlobalShortcutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalShortcutService.swift; sourceTree = "<group>"; };
+		B9139FD211FD43379E14058D /* QuickLookHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		004000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001000000000000000000040 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		005000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				005000000000000000000002 /* Dragover */,
+				005000000000000000000050 /* Frameworks */,
+				005000000000000000000003 /* Products */,
+				6129409183D124F1D7C6FF51 /* ShelfCell.swift */,
+				A3B94791B75C8A80ACEAE0E2 /* ShelfCollectionView.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		005000000000000000000002 /* Dragover */ = {
+			isa = PBXGroup;
+			children = (
+				005000000000000000000010 /* App */,
+				005000000000000000000011 /* Models */,
+				005000000000000000000012 /* Services */,
+				005000000000000000000013 /* Actions */,
+				005000000000000000000014 /* UI */,
+				002000000000000000000031 /* Assets.xcassets */,
+				002000000000000000000032 /* Dragover.entitlements */,
+				002000000000000000000033 /* Info.plist */,
+			);
+			path = Dragover;
+			sourceTree = "<group>";
+		};
+		005000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				003000000000000000000001 /* Dragover.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		005000000000000000000010 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				002000000000000000000001 /* DragoverApp.swift */,
+				002000000000000000000002 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		005000000000000000000011 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				002000000000000000000003 /* ShelfItem.swift */,
+				002000000000000000000004 /* Shelf.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		005000000000000000000012 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				002000000000000000000005 /* PreferencesManager.swift */,
+				002000000000000000000006 /* ShelfManager.swift */,
+				002000000000000000000007 /* DragDetectionService.swift */,
+				002000000000000000000008 /* NotchDetectionService.swift */,
+				002000000000000000000009 /* ScreenshotMonitorService.swift */,
+				002000000000000000000010 /* PermissionService.swift */,
+				002000000000000000000011 /* InstantActionService.swift */,
+				B9139FD211FD43379E14058D /* QuickLookHelper.swift */,
+				B362C3E8C7E343909F676E68 /* GlobalShortcutService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		005000000000000000000013 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				002000000000000000000012 /* InstantAction.swift */,
+				002000000000000000000013 /* AirDropAction.swift */,
+				002000000000000000000014 /* MessagesAction.swift */,
+				002000000000000000000015 /* MailAction.swift */,
+				002000000000000000000016 /* CopyAction.swift */,
+				002000000000000000000017 /* CompressAction.swift */,
+				002000000000000000000018 /* GetInfoAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		005000000000000000000014 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				005000000000000000000015 /* Shelf */,
+				005000000000000000000016 /* Preferences */,
+				005000000000000000000017 /* Onboarding */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		005000000000000000000015 /* Shelf */ = {
+			isa = PBXGroup;
+			children = (
+				002000000000000000000019 /* ShelfPanel.swift */,
+				002000000000000000000020 /* ShelfContentView.swift */,
+				002000000000000000000021 /* ShelfItemView.swift */,
+				002000000000000000000022 /* InstantActionsView.swift */,
+				002000000000000000000023 /* ItemPreviewPanel.swift */,
+			);
+			path = Shelf;
+			sourceTree = "<group>";
+		};
+		005000000000000000000016 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				002000000000000000000024 /* PreferencesView.swift */,
+				002000000000000000000025 /* GeneralSettingsView.swift */,
+				002000000000000000000026 /* ShelfActivationSettingsView.swift */,
+				002000000000000000000027 /* ShelfInteractionSettingsView.swift */,
+				002000000000000000000028 /* InstantActionsSettingsView.swift */,
+				002000000000000000000029 /* ScreenshotShelfSettingsView.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		005000000000000000000017 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				002000000000000000000030 /* PermissionOnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		005000000000000000000050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				002000000000000000000040 /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		006000000000000000000001 /* Dragover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 007000000000000000000003 /* Build configuration list for PBXNativeTarget "Dragover" */;
+			buildPhases = (
+				006000000000000000000002 /* Sources */,
+				004000000000000000000001 /* Frameworks */,
+				006000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dragover;
+			productName = Dragover;
+			productReference = 003000000000000000000001 /* Dragover.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		008000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					006000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 007000000000000000000001 /* Build configuration list for PBXProject "Dragover" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 005000000000000000000001;
+			productRefGroup = 005000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				006000000000000000000001 /* Dragover */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		006000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD149D72F3A2B670045B0C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		006000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001000000000000000000001 /* DragoverApp.swift in Sources */,
+				001000000000000000000002 /* AppDelegate.swift in Sources */,
+				001000000000000000000003 /* ShelfItem.swift in Sources */,
+				001000000000000000000004 /* Shelf.swift in Sources */,
+				001000000000000000000005 /* PreferencesManager.swift in Sources */,
+				001000000000000000000006 /* ShelfManager.swift in Sources */,
+				001000000000000000000007 /* DragDetectionService.swift in Sources */,
+				001000000000000000000008 /* NotchDetectionService.swift in Sources */,
+				001000000000000000000009 /* ScreenshotMonitorService.swift in Sources */,
+				001000000000000000000010 /* PermissionService.swift in Sources */,
+				001000000000000000000011 /* InstantActionService.swift in Sources */,
+				001000000000000000000012 /* InstantAction.swift in Sources */,
+				001000000000000000000013 /* AirDropAction.swift in Sources */,
+				001000000000000000000014 /* MessagesAction.swift in Sources */,
+				001000000000000000000015 /* MailAction.swift in Sources */,
+				001000000000000000000016 /* CopyAction.swift in Sources */,
+				001000000000000000000017 /* CompressAction.swift in Sources */,
+				001000000000000000000018 /* GetInfoAction.swift in Sources */,
+				001000000000000000000019 /* ShelfPanel.swift in Sources */,
+				001000000000000000000020 /* ShelfContentView.swift in Sources */,
+				001000000000000000000021 /* ShelfItemView.swift in Sources */,
+				001000000000000000000022 /* InstantActionsView.swift in Sources */,
+				001000000000000000000023 /* ItemPreviewPanel.swift in Sources */,
+				001000000000000000000024 /* PreferencesView.swift in Sources */,
+				001000000000000000000025 /* GeneralSettingsView.swift in Sources */,
+				001000000000000000000026 /* ShelfActivationSettingsView.swift in Sources */,
+				001000000000000000000027 /* ShelfInteractionSettingsView.swift in Sources */,
+				001000000000000000000028 /* InstantActionsSettingsView.swift in Sources */,
+				001000000000000000000029 /* ScreenshotShelfSettingsView.swift in Sources */,
+				001000000000000000000030 /* PermissionOnboardingView.swift in Sources */,
+				C8CFDBCFA25E45BAB043FC0C /* QuickLookHelper.swift in Sources */,
+				59405537CF1A472E80431D25 /* GlobalShortcutService.swift in Sources */,
+				7E7E4FD6893FEE98B07DCB3B /* ShelfCell.swift in Sources */,
+				BF644162BA22B071FAB83C91 /* ShelfCollectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		009000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		009000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		009000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dragover/Dragover.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Dragover/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dragover;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragover.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		009000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dragover/Dragover.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_FILE_ACCESS_DOWNLOADS_FOLDER = readwrite;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Dragover/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dragover;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragover.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		007000000000000000000001 /* Build configuration list for PBXProject "Dragover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009000000000000000000001 /* Debug */,
+				009000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		007000000000000000000003 /* Build configuration list for PBXNativeTarget "Dragover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				009000000000000000000003 /* Debug */,
+				009000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 008000000000000000000001 /* Project object */;
+}

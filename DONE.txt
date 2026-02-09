@@ -1,0 +1,9 @@
+All tasks completed:
+- App Icon Updated
+- Quick Look added
+- Keyboard Shortcuts added
+- Preferences fixed
+- Manage Button fixed
+- Reset Button fixed
+- Modifier Keys fixed
+- README updated
