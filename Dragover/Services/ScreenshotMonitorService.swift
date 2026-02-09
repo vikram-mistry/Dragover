@@ -1,5 +1,6 @@
 import Foundation
 import AppKit
+import UserNotifications
 
 /// Service for monitoring screenshots and adding them to shelves
 class ScreenshotMonitorService {
@@ -21,6 +22,13 @@ class ScreenshotMonitorService {
     func startMonitoring() {
         let prefs = PreferencesManager.shared
         guard prefs.screenshotShelfEnabled else { return }
+        
+        // Request notification permissions
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { granted, error in
+            if let error = error {
+                print("Notification permission error: \(error)")
+            }
+        }
         
         let folderPath = (prefs.screenshotFolderPath as NSString).expandingTildeInPath
         
@@ -150,12 +158,17 @@ class ScreenshotMonitorService {
     }
     
     private func showConfirmationToast(for url: URL) {
-        // Create a simple notification
-        let notification = NSUserNotification()
-        notification.title = "Screenshot Added to Shelf"
-        notification.informativeText = url.lastPathComponent
-        notification.soundName = nil
+        let content = UNMutableNotificationContent()
+        content.title = "Screenshot Added to Shelf"
+        content.body = url.lastPathComponent
+        content.sound = .default
         
-        NSUserNotificationCenter.default.deliver(notification)
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error showing notification: \(error)")
+            }
+        }
     }
 }

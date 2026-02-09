@@ -13,7 +13,7 @@ struct ShelfCollectionView: NSViewRepresentable {
         scrollView.drawsBackground = false
         
         let collectionView = KeyboardCollectionView()
-        collectionView.itemPrototype = nil // We register class instead
+        // We register class instead
         collectionView.register(ShelfCollectionViewItem.self, forItemWithIdentifier: ShelfCollectionViewItem.identifier)
         collectionView.backgroundColors = [.clear]
         collectionView.isSelectable = true
@@ -144,9 +144,6 @@ struct ShelfCollectionView: NSViewRepresentable {
         // MARK: - Actions
         
         func deleteSelectedItems() {
-            let selectedIndexes = (parent.selectedItemIds as? NSCollectionViewDataSource) as? NSCollectionView
-            let collectionView = (selectedIndexes as? NSCollectionView) // Avoid forced cast issues by accessing parent
-            
             // Get selected items from indices
             // Accessing collectionView safely would be better via property
             // Let's use parent.selectedItemIds which is bound
@@ -192,7 +189,7 @@ struct ShelfCollectionView: NSViewRepresentable {
             // Single Item Menu
             guard indexPath.item < items.count else { return nil }
             let item = items[indexPath.item]
-            guard let url = item.url else { return nil }
+            guard item.url != nil else { return nil }
             
             let menu = NSMenu(title: item.displayName)
             
