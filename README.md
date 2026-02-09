@@ -16,6 +16,32 @@ A native macOS drag-and-drop shelf application for temporary file storage during
 - **Screenshot Capture**: Automatically capture new screenshots into a shelf
 - **Full Offline Support**: No network connectivity required
 
+---
+
+## Main Shelf
+
+A floating shelf appears instantly during drag operations and allows you to temporarily hold files before dropping them into apps or folders.
+<img src="screenshots/Shelf-with-multi-selected-files.png" width="800" />
+---
+## Settings - General
+
+Fully configurable behavior for activation, shelf interaction, and screenshot handling.
+
+<img src="screenshots/Dragover-general-settings.png" width="800" />
+---
+## Settings - Shelf Activation
+
+<img src="screenshots/Dragover-Shelf-activation.png" width="800" />
+---
+## Settings - Screenshot Shelf
+
+<img src="screenshots/Dragover-Screenshot-Shelf-setup.png" width="800" />
+---
+## Settings - Instant Actions
+
+<img src="screenshots/Dragover-Instant-actions.png" width="800" />
+
+---
 ## Requirements
 
 - macOS 13.0 or later
